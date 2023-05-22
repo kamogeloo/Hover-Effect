@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+#text{
+    max-width: 80vw;
+    margin-top: 10vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.line{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+p, .letter {
+    color: white;
+    font-size: 8vw;
+    font-family:"Rubrik", sans-serif;
+    margin: 0rem;
+    text-transform: uppercase;
+}
+
+/*hovering over text that has the class of fancy and lower the opacity of text that does not have said class*/
+#text:has(.fancy:hover) .word:not(.fancy:hover){
+    opacity: 0.2;
+}
+
+a{
+    text-decoration: none;
+}
+
+.fancy > .letter{
+    display: inline-block;
+    transition: transform 400ms ease;
+    
+}
+.fancy:hover >.letter{
+    transition-duration: 800ms;
+   
+}
+
+.fancy:hover > .letter:nth-child(1){
+    transform: translate(-70%, 40%) rotate(-8deg);
+    
+}
+.fancy:hover > .letter:nth-child(2){
+    transform: translate(-70%, 50%) rotate(-8deg);
+}
+.fancy:hover > .letter:nth-child(3){
+    transform: translate(-60%, 10%) rotate(6deg);
+}
+.fancy:hover > .letter:nth-child(4){
+    transform: translate(-40%, 40%) rotate(-6deg);
+}
+.fancy:hover > .letter:nth-child(5){
+    transform: translate(0%, 0%) rotate(6deg);
+}
+.fancy:hover > .letter:nth-child(6){
+    transform: translate(0%, 10%) rotate(8deg);
+}
+.fancy:hover > .letter:nth-child(7){
+    transform: translate(0%, 10%) rotate(-8deg);
+}
+
+.fancy:hover > .letter:nth-child(8){
+    transform: translate(0%, 40%) rotate(8deg);
+}
+
+.fancy:hover > .letter:nth-child(9){
+    transform: translate(0%, 0%) rotate(-8deg);
+}
+.fancy:hover > .letter:nth-child(10){
+    transform: translate(0%, 40%) rotate(8deg);
+}
+
+.fancy:hover > .letter:nth-child(11){
+    transform: translate(0%, 10%) rotate(-8deg);
+}
+
+.fancy:hover > .letter:nth-child(12){
+    transform: translate(0%, 30%) rotate(8deg);
+}
+
+.fancy:hover > .letter:nth-child(13){
+    transform: translate(30%, 20%) rotate(8deg);
+}
+
+
